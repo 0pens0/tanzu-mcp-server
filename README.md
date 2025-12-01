@@ -32,11 +32,11 @@ Once deployed, configure your MCP client with the server URL:
 ```json
 {
   "mcpServers": {
-    "cloud-foundry": {
+    "tanzu-mcp": {
       "disabled": false,
       "timeout": 300,
       "type": "streamable",
-      "url": "https://your-mcp-server.apps.your-cf-domain.com/mcp",
+      "url": "https://tanzu-mcp-server.apps.your-cf-domain.com/mcp",
       "autoApprove": []
     }
   }
@@ -57,11 +57,11 @@ Once deployed, configure your MCP client with the server URL:
 # Copy the template and configure with your credentials
 cp manifest-template.yml manifest.yml
 # Edit manifest.yml with your CF credentials
-cf push cloud-foundry-mcp-server
+cf push tanzu-mcp-server
 
 # Get the deployed URL
 cf apps
-# Look for your app and copy the URL (e.g., https://cloud-foundry-mcp-server.apps.your-domain.com)
+# Look for your app and copy the URL (e.g., https://tanzu-mcp-server.apps.your-domain.com)
 ```
 
 ### Local Development
@@ -90,7 +90,7 @@ The server includes automatic configuration validation on startup:
 
 ### Application Properties
 ```properties
-spring.ai.mcp.server.name=cloud-foundry-mcp
+spring.ai.mcp.server.name=tanzu-mcp
 spring.ai.mcp.server.version=0.1.0
 spring.ai.mcp.server.prompt-change-notification=false
 spring.ai.mcp.server.resource-change-notification=false
@@ -198,11 +198,11 @@ The server provides comprehensive health monitoring:
 
 **Status**: ✅ Successfully Deployed and Running
 
-**URL**: `https://cloud-foundry-mcp-courteous-lemur-hd.apps.tp.penso.io`
+**URL**: `https://tanzu-mcp-server.apps.tp.penso.io`
 
 **Organization**: `tanzu-platform-demo`  
-**Space**: `mcp-server`  
-**Application**: `cloud-foundry-mcp`
+**Space**: `mcp-servers`  
+**Application**: `tanzu-mcp-server`
 
 ### Recent Updates (v0.1.0)
 - ✅ **Upgraded to Spring AI 1.1.0 GA** - Latest stable release with enhanced observability, MCP Java SDK v0.15.0, and improved security integration

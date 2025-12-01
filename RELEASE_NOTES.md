@@ -76,11 +76,11 @@ CF_SPACE=mcp-server
 ```json
 {
   "mcpServers": {
-    "cloud-foundry": {
+    "tanzu-mcp": {
       "disabled": false,
-      "timeout": 60,
+      "timeout": 300,
       "type": "streamable",
-      "url": "https://cloud-foundry-mcp-server.apps.tp.penso.io/mcp",
+      "url": "https://tanzu-mcp-server.apps.tp.penso.io/mcp",
       "autoApprove": []
     }
   }
@@ -95,7 +95,7 @@ CF_SPACE=mcp-server
 ./mvnw clean package -DskipTests
 
 # Deploy to Cloud Foundry
-cf push cloud-foundry-mcp-server
+cf push tanzu-mcp-server
 ```
 
 #### Local Development
