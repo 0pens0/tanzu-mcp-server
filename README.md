@@ -1,9 +1,9 @@
 # Cloud Foundry MCP Server
 
-A comprehensive Model Context Protocol (MCP) server that provides AI-powered access to Cloud Foundry operations through 32 specialized tools. Built with [Spring AI 1.1.0-M2](https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html) and deployed on Cloud Foundry.
+A comprehensive Model Context Protocol (MCP) server that provides AI-powered access to Cloud Foundry operations through 38 specialized tools. Built with [Spring AI 1.1.0 GA](https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html) and deployed on Cloud Foundry.
 
 ![Cloud Foundry MCP Server](https://img.shields.io/badge/Cloud%20Foundry-MCP%20Server-blue?style=for-the-badge&logo=cloudfoundry)
-![Spring AI](https://img.shields.io/badge/Spring%20AI-1.1.0--M2-green?style=for-the-badge&logo=spring)
+![Spring AI](https://img.shields.io/badge/Spring%20AI-1.1.0-green?style=for-the-badge&logo=spring)
 ![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.2-brightgreen?style=for-the-badge&logo=springboot)
 ![MCP](https://img.shields.io/badge/MCP-Protocol-purple?style=for-the-badge)
@@ -175,12 +175,13 @@ This MCP server exposes **38 Cloud Foundry operations** as AI-powered tools:
 
 ## 🔧 Technical Details
 
-- **Spring AI Version**: 1.1.0-M2
+- **Spring AI Version**: 1.1.0 (GA)
 - **Spring Boot Version**: 3.4.2
 - **Java Version**: 21
 - **Transport**: HTTP Streamable
 - **Health Endpoint**: `/actuator/health`
 - **Configuration**: Environment variable-based CF credentials
+- **MCP Java SDK**: v0.15.0 (included with Spring AI 1.1.0)
 
 ## 📊 Health Status
 
@@ -204,6 +205,7 @@ The server provides comprehensive health monitoring:
 **Application**: `cloud-foundry-mcp`
 
 ### Recent Updates (v0.1.0)
+- ✅ **Upgraded to Spring AI 1.1.0 GA** - Latest stable release with enhanced observability, MCP Java SDK v0.15.0, and improved security integration
 - ✅ **Added Target Management Tools** - New `targetCf`, `getCurrentTarget`, and `clearTarget` operations
 - ✅ **Configuration Validation** - Added startup validation for CF credentials and settings
 - ✅ **Enhanced Error Handling** - Better validation and parameter processing

@@ -55,7 +55,7 @@
 
 ### 🛠 Technical Implementation
 
-- **Spring AI 1.1.0-M2** - Latest MCP server framework
+- **Spring AI 1.1.0 (GA)** - Latest MCP server framework with enhanced observability and MCP Java SDK v0.15.0
 - **Spring Boot 3.4.2** - Modern Java framework
 - **Java 21** - Latest LTS Java version
 - **HTTP Streamable Transport** - Modern HTTP-based communication protocol
